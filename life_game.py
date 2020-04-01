@@ -67,4 +67,5 @@ class LifeGame(object):
                         
     def get_next_generation(self):
         self._prepare_to_get_next_generation()
+        self.copy_earth = copy.deepcopy(self.earth)
         return self.earth
